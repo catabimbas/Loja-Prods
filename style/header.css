@@ -14,14 +14,5 @@ a#images{
     left: 575px;
     top: 45px;
     cursor: pointer;
-    background: url(images/Logo\ P.png);
-}
-
-input#search{
-    position:relative;
-    top: 245px;
-    width: 400px;
-    left: 460px;
-    border-radius: 50px;
-    border-style: solid;
+    background: url(../images/Logo\ P.png);
 }

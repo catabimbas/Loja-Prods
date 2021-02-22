@@ -1,0 +1,8 @@
+input#search{
+    position:relative;
+    top: 245px;
+    width: 400px;
+    left: 460px;
+    border-radius: 50px;
+    border-style: solid;
+}

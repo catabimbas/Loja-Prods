@@ -12,8 +12,8 @@ produ.addEventListener('keyup', (e) => {
 // Function Button
 function procurarBot() {
     produ = document.querySelector('input#search')
-    // pi.innerHTML = ``
-    // p.appendChild(pi)
+    div.innerHTML = ``
+    section.appendChild(div)
     procurar(produ.value)
     produ.value = ""
     
@@ -34,17 +34,24 @@ function procurar(prod) {
 }
 // Function inner content
 function callProd(prod) {
-    let c = 0
-    for (let top = 350; top <= 600; top+= 250){
-        for (let left = 200; left <= 950; left = left + 375 ) {
-            div.innerHTML += `
+    let left = 200
+    let top = 350
+    let c = 1
+    let prods = 0
+    while (c <= prod.length) { 
+        div.innerHTML += `
             <div style="position: absolute; width: 200px; height: 175px; left: ${left}px; top: ${top}px; background: #C4C4C4;">
-                <a href="website/gato.html"><img src="images/R${prod[c]}.png" alt=""></a>
-                <p style="text-align: center;">${prod[c]}</p>
+                <a href="website/gato.html"><img src="images/R${prod[prods]}.png" alt=""></a>
+                <p style="text-align: center;">${prod[prods]}</p>
             </div>`
-            section.appendChild(div)
-            c+=1
+        section.appendChild(div)
+        left += 375
+        if (left > 950) {
+            left = 200
+            top += 250
         }
-        
+        c++
+        prods++
     }
+    console.log('Saiu')
 }

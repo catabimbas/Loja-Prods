@@ -1,5 +1,5 @@
 input#search{
-    position:relative;
+    position:absolute;
     top: 245px;
     width: 400px;
     left: 460px;

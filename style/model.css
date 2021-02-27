@@ -1,0 +1,25 @@
+section#prods>div#imgProd{
+    position: absolute;
+    top: 250px;
+    left: 50px;
+    width: 275px;
+    height: 275px;
+    background-color: #C4C4C4;
+}
+section#prods>div#description{
+    position: absolute;
+    left: 495px;
+    top: 250px;
+    width: 820px;
+    height: 250px;
+    background-color: #C4C4C4;
+}
+section#prods>div#price{
+    position: absolute;
+    width: 240px;
+    height: 130px;
+    left: 67px;
+    top: 560px;
+
+    background-color: #C4C4C4;
+}
